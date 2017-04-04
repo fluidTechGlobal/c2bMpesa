@@ -8,7 +8,7 @@
 Build up upon from https://packagist.org/packages/lawrence615/mpesa 
 
 
-This package is created to integrate c2b Mpesa.
+This package is created to integrate c2b Mpesa. This package will only take payments payed by users in the system.
 
 ## Requirements
 - [PHP >=5.6.0](http://php.net/)
@@ -21,12 +21,12 @@ composer require "lawrence615/mpesa:dev-master"
 
 #### Service Provider
 ```php
-Mobidev\Mpesa\MpesaServiceProvider::class
+Ftg\Mpesa\MpesaServiceProvider::class,
 ```
 
 #### Configuration and Assets
 ```bash
-php artisan vendor:publish --provider="Mobidev\Mpesa\MpesaServiceProvider"
+php artisan vendor:publish --provider="Ftg\Mpesa\MpesaServiceProvider"
 ```
 
 Then run php artisan migrate to create the tables in you database. This will create two tables;
