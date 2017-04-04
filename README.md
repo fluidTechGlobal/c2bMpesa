@@ -1,12 +1,14 @@
-# Mpesa API Implementation
+# Mpesa c2b 
 
 [![Latest Stable Version](https://poser.pugx.org/lawrence615/mpesa/v/stable)](https://packagist.org/packages/lawrence615/mpesa)
 [![Total Downloads](https://poser.pugx.org/lawrence615/mpesa/downloads)](https://packagist.org/packages/lawrence615/mpesa)
 [![Latest Unstable Version](https://poser.pugx.org/lawrence615/mpesa/v/unstable)](https://packagist.org/packages/lawrence615/mpesa)
 [![License](https://poser.pugx.org/lawrence615/mpesa/license)](https://packagist.org/packages/lawrence615/mpesa)
 
-This package is created to integrate MPesa Services i.e. C2B, B2C, B2B and Online Checkout in your Laravel app.
-It allows you to receive and process soap sent by Safaricom. The package is still under heavy development and thus subject to bugs and changes.
+Build up upon from https://packagist.org/packages/lawrence615/mpesa 
+
+
+This package is created to integrate c2b Mpesa.
 
 ## Requirements
 - [PHP >=5.6.0](http://php.net/)
@@ -48,6 +50,14 @@ These are the events triggered by the package. The list will grow with time as m
 
 
 __C2B Payment Event Listener__
+
+Add the following to the .env
+```
+BusinessNumber=
+MaxAmount=
+
+```
+
 
 Create a Controller i.e. PaymentsController then create a function c2bPayment
 ```php
