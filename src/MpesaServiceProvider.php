@@ -21,7 +21,7 @@ class MpesaServiceProvider extends ServiceProvider
             ], 'migrations');
 
         $this->publishes([
-            __DIR__ . '/views' => base_path('resources/views/mobidev/mpesa'),
+            __DIR__ . '/views' => base_path('resources/views/ftg/mpesa'),
         ], 'views');
 
     }
@@ -33,6 +33,6 @@ class MpesaServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('Mobidev\Mpesa\controllers\C2BController');
+        $this->app->make('Ftg\Mpesa\controllers\C2BController');
     }
 }
