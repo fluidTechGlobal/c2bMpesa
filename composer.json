@@ -1,0 +1,23 @@
+{
+  "name": "ftg/mpesac2b",
+  "description": "Package to integrate Mpesa C2B Service",
+  "type": "library",
+  "require": {
+    "php": "^5.6 || ^7.0",
+    "nesbot/carbon": "^1.21"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "David",
+      "email": "dvsituma@gmail.com",
+      "homepage": "http://fluidtechglobal.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Ftg\\Mpesa\\": "src/"
+    }
+  },
+  "minimum-stability": "alpha"
+}
