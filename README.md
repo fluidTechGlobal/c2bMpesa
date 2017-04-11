@@ -16,7 +16,7 @@ This package is created to integrate c2b Mpesa. This package will only take paym
 
 ## Quick Installation
 ```bash
-composer require "lawrence615/mpesa:dev-master"
+composer require "ftg/mpesac2b:dev-master"
 ```
 
 #### Service Provider
